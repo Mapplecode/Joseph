@@ -198,19 +198,33 @@
                                         <div class="modal-body">
                                         <dl>
                                             <p>
-                                                <input class="btn btn-secondary" type="file" name="files[]" multiple="true" autocomplete="off" required>
+                                                <input class="form-group btn btn-secondary" type="file" name="files[]" multiple="true" autocomplete="off" required>
                                             </p>
                                         </dl>
-                                        <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Dropdown button
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item" href="#">Action</a>
-                                              <a class="dropdown-item" href="#">Another action</a>
-                                              <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Pick Type</label>
+                                            <select class="form-control" name="type" id="exampleFormControlSelect1">
+                                             <option>--Select--</option>  
+                                              <option value="deprt">Departments</option>
+                                              <option value="userman">User Manuals</option>
+                                              <option value="tribdge">Tribe Knowledge</option>
+                                              <option value="qrcode">QR Codes</option>
+                                            </select>
                                           </div>
+                                          <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Pick collection Type</label>
+                                            <select class="form-control" name="collectiontype" id="exampleFormControlSelect1">
+                                             <option>--Select--</option>  
+                                              <option value="collections">Collections</option>
+                                              <option value="water">Water</option>
+                                              <option value="police">Police</option>
+                                              <option value="streets">Streets</option>
+                                              <option value="refuse">Refuse</option>
+                                              <option value="fleet">Fleet</option>
+                                            </select>
+                                          </div>
+
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
