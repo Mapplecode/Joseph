@@ -74,6 +74,9 @@ def dashboard():
         for file in files:
             if file and allowed_file(file.filename):
                 filename = secure_filename(file.filename)
+                print("*********************")
+                print(filename,request.form.get("type"),request.form.get("collectiontype"))
+                print("*********************")
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
         flash('File(s) successfully uploaded')
